@@ -1,0 +1,12 @@
+:root {
+    --font: 'Ubuntu', sans-serif;
+    --text-color: #000000;
+    --button-color:  #20A2EB;
+    --button-hover-color: #298cc6;
+}
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
