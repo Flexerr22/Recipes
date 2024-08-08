@@ -1,8 +1,9 @@
 :root {
-    --font: 'Ubuntu', sans-serif;
+    --font-main: 'Ubuntu', sans-serif;
     --text-color: #000000;
     --button-color:  #20A2EB;
     --button-hover-color: #298cc6;
+    --font-reg: "Poppins", sans-serif;
 }
 
 body{
