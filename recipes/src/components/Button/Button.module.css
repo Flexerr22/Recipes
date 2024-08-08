@@ -1,0 +1,16 @@
+.button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.accent:hover{
+    background: var(--button-hover-color);
+    transform: scale(1.03);
+}
+
+.accent{
+    background: var(--button-color);
+}
