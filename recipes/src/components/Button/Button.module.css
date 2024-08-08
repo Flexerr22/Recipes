@@ -1,10 +1,21 @@
 .button{
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
-    font-weight: 700;
     cursor: pointer;
+    font-family: var(--font-main);
+    text-transform: uppercase;
+}
+
+.small{
+    padding: 15px 13px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.big{
+    padding: 15px 38px;
+    font-size: 16px;
+    font-weight: 700;
 }
 .accent:hover{
     background: var(--button-hover-color);
