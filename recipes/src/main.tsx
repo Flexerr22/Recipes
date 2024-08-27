@@ -8,6 +8,7 @@ import { Favourites } from './pages/Favourites/Favourites.tsx';
 import { Profile } from './pages/Profile/Profile.tsx';
 import { Layout } from './layout/Menu/Layout.tsx';
 import { AddRecipe } from './pages/AddRecipe/AddRecipe.tsx';
+import { Product } from './pages/Product/Product.tsx';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: '/addrecipe', 
         element: <AddRecipe />
+      },
+      {
+        path: '/product/:id',
+        element: <Product/>
       }
     ]
   },
