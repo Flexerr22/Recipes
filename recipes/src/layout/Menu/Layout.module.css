@@ -27,7 +27,7 @@
 .active{
     color: white;
 }
-.navbar_list button{
+.add_button{
     background: none;
     border-color: #20A2EB;
     border-radius: 5px;
@@ -36,7 +36,7 @@
     padding: 13px 4px;
     margin-top: -15px;
 }
-.navbar_list button:hover{
+.add_button:hover{
     color: white;
 }
 .navbar svg{
@@ -51,4 +51,8 @@
     justify-content: center;
     width: 60%;
     height: 100%;
+}
+.svg{
+    margin-right: 1rem;
+    margin-top: 1rem;
 }

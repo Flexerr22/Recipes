@@ -1,0 +1,27 @@
+.search{
+    position: relative;
+}
+.input{
+    padding: 10px 10px 10px 40px;
+    border: 1px solid rgb(100, 99, 99);
+    border-radius: 5px;
+    background: white;
+    outline: none;
+    margin-top: -15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: black;
+    box-shadow: inset;
+    
+}
+
+.invalid{
+    border-bottom: red;
+}
+.svg{
+    position: absolute;
+    color: black;
+    left: 10px;
+}

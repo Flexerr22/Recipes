@@ -1,0 +1,54 @@
+.cart{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.img img{
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    position: relative;
+}
+.opicanie{
+    display: flex;
+    gap: 1rem;
+
+}
+.title{
+    font-size: x-large;
+    font-weight: 700;
+}
+.ingridients {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.time {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.author{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.like{
+    position: absolute;
+    left: 126.5%;
+    bottom: 93%;
+    cursor: pointer;
+}

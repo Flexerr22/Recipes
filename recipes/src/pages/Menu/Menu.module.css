@@ -1,0 +1,9 @@
+.main{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.cart{
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
