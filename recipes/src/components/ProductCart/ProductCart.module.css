@@ -1,12 +1,16 @@
 .cart{
     display: flex;
     flex-direction: row;
-    width: 60%;
+    position: relative;
+    width: 80%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
+.img{
+    height: 100%;
+}
 .img img{
-    width: 200px;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
 }
@@ -20,7 +24,6 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
-    position: relative;
 }
 .opicanie{
     display: flex;
@@ -46,9 +49,10 @@
     gap: 1rem;
     align-items: center;
 }
-.like{
+.like {
     position: absolute;
-    left: 126.5%;
-    bottom: 93%;
-    cursor: pointer;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    cursor: pointer; 
 }
