@@ -31,4 +31,8 @@
     background: white;
     outline: none;
     font-family: "Ubuntu", sans-serif;
+    appearance: none; /* Убирает стандартный вид элемента */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
 }
