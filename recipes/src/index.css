@@ -1,15 +1,16 @@
 :root {
-    --font-main: 'Ubuntu', sans-serif;
-    --text-color: #000000;
-    --button-color:  #20A2EB;
-    --button-hover-color: #298cc6;
-    --font-reg: "Poppins", sans-serif;
+  --font-main: 'Ubuntu', sans-serif;
+  --text-color: #000000;
+  --button-color: #20a2eb;
+  --button-hover-color: #298cc6;
+  --font-reg: 'Poppins', sans-serif;
 }
 
-body{
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 0;
-    background-color: #E0E0E0;
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  background-color: #e0e0e0;
+  box-sizing: border-box;
 }

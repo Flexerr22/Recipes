@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  box-sizing: border-box;
+  background-color: white;
+}
+.left_panel {
+  display: flex;
+  width: 60%;
+  position: relative;
+}
+.main_text {
+  position: absolute;
+  margin-top: 10px;
+  color: white;
+  font-family: var(--font-main);
+  font-size: 32px;
+  top: 42%;
+  width: 60%;
+  left: 5%;
+  font-weight: 400;
+}
+.top_text {
+  position: absolute;
+  color: white;
+  font-family: var(--font-main);
+  font-size: 40px;
+  font-weight: bold;
+  left: 5%;
+}
+.right_panel {
+  background-color: white;
+  width: 40%;
+}

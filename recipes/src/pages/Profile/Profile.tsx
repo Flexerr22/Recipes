@@ -1,3 +1,3 @@
-export function Profile(){
-    return <>Profile</>
+export function Profile() {
+  return <>Profile</>
 }

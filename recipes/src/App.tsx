@@ -9,8 +9,12 @@ function App() {
   return (
     <>
       <Button onClick={addCounter}>Добавить рецепт</Button>
-      <Button appearence='big' onClick={addCounter} children={undefined}></Button>
-      <Input placeholder='Name'/>
+      <Button
+        appearence="big"
+        onClick={addCounter}
+        children={undefined}
+      ></Button>
+      <Input placeholder="Name" />
     </>
   )
 }
