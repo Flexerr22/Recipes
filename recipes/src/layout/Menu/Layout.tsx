@@ -5,8 +5,11 @@ import favourite from './../../assets/favourite.svg'
 import profile from './../../assets/profile.svg'
 import line from './../../assets/line.svg'
 import recipe from './../../assets/recipe.svg'
+import { useAuth } from '../../interfaces/AuthContext'
 
 export function Layout() {
+  const { isAuthenticated } = useAuth()
+
   return (
     <div className={styles['layout']}>
       <div className={styles['navbar']}>
@@ -33,23 +36,37 @@ export function Layout() {
             Моя книга рецептов
           </NavLink>
           <img className={styles['img']} src={line} />
-          <NavLink
-            to="/profile"
-            className={({ isActive }) =>
-              cn(styles['link'], {
-                [styles.active]: isActive
-              })
-            }
-          >
-            <img className={styles['img']} src={profile} />
-            Профиль
-          </NavLink>
+          {isAuthenticated ? (
+            <NavLink
+              to="/profile"
+              className={({ isActive }) =>
+                cn(styles['link'], {
+                  [styles.active]: isActive
+                })
+              }
+            >
+              <img className={styles['img']} src={profile} />
+              Профиль
+            </NavLink>
+          ) : (
+            <NavLink
+              to="/auth/login"
+              className={({ isActive }) =>
+                cn(styles['link'], {
+                  [styles.active]: isActive
+                })
+              }
+            >
+              <img className={styles['img']} src={profile} />
+              Войти
+            </NavLink>
+          )}
           <img className={styles['img']} src={line} />
           <button className={styles['add_button']}>
             <NavLink
               to="/addrecipe"
               className={({ isActive }) =>
-                cn(styles['link'], {
+                cn(styles['add_button'], {
                   [styles.active]: isActive
                 })
               }

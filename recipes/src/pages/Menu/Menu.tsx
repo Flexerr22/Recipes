@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Headlink from '../../components/Headlink/Headlink'
 import { Product } from '../../interfaces/Product.interface'
 import ProductCart from '../../components/ProductCart/ProductCart'
@@ -13,28 +13,25 @@ export function Menu() {
   const [sortValue, setSortValue] = useState<string>('')
   const [sortValueNew, setSortValueNew] = useState<string>('')
 
-  const getProduct = useCallback(
-    async (name?: string) => {
-      try {
-        const { data } = await axios.get<Product[]>(
-          'https://purpleschool.ru/pizza-api-demo/products',
-          {
-            params: { name }
-          }
-        )
-        const sortedData = filterProducts(data, sortValue, sortValueNew)
-        setProducts(sortedData)
-      } catch (e) {
-        console.error(e)
-        return
-      }
-    },
-    [sortValue, sortValueNew]
-  )
+  const getProduct = async (name?: string) => {
+    try {
+      const { data } = await axios.get<Product[]>(
+        'https://purpleschool.ru/pizza-api-demo/products',
+        {
+          params: { name }
+        }
+      )
+      setProducts(data)
+      console.log('products', products)
+    } catch (e) {
+      console.error(e)
+      return
+    }
+  }
 
   useEffect(() => {
     getProduct(searchItem)
-  }, [searchItem, getProduct])
+  }, [searchItem])
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchItem(event.target.value)
@@ -42,30 +39,25 @@ export function Menu() {
 
   const sortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSortValue(event.target.value)
+    filterProducts()
   }
 
   const sortChangeNew = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSortValueNew(event.target.value)
   }
 
-  const filterProducts = (
-    products: Product[],
-    sortValue: string,
-    sortValueNew: string
-  ): Product[] => {
-    let filterProducts = products
+  const filterProducts = () => {
     if (sortValue) {
-      filterProducts = filterProducts.filter(
-        product => product.price.toString() === sortValue
+      setProducts(
+        products.filter(product => product.price.toString() === sortValue)
       )
-      console.log(filterProducts)
     } else if (sortValueNew) {
-      filterProducts = filterProducts.filter(
-        product => product.ingredients.length.toString() === sortValueNew
+      setProducts(
+        products.filter(
+          product => product.ingredients.length.toString() === sortValueNew
+        )
       )
-      console.log(filterProducts)
     }
-    return filterProducts
   }
 
   return (
@@ -85,7 +77,9 @@ export function Menu() {
             <option value="3">Кол-во ингридиентов: 3</option>
           </select>
         </div>
-        <Search onChange={handleChange} placeholder="Введите блюдо" />
+        <div className={styles['search']}>
+          <Search onChange={handleChange} placeholder="Введите блюдо" />
+        </div>
       </div>
       <div className={styles['text']}>
         <Headlink>Рецепты</Headlink>
