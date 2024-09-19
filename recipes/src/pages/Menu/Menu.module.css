@@ -1,38 +1,45 @@
-.main{
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem;
+.main {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
 }
-.cart{
-    margin-top: 5rem;
-    margin-left: 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.cart {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.sort{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding:1rem 5rem 3rem 5rem;
+.sort {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem 3rem 5rem;
 }
-.select{
-    display: flex;
-    gap: 1rem;
+.select {
+  display: flex;
+  gap: 1rem;
 }
-.select select{
-    gap: 2rem;
-    background: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    border: 1px solid rgb(212, 207, 207);
-    border-radius: 5px;
-    background: white;
-    outline: none;
-    font-family: "Ubuntu", sans-serif;
-    appearance: none; /* Убирает стандартный вид элемента */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    cursor: pointer;
+.select select {
+  gap: 2rem;
+  background: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(212, 207, 207);
+  border-radius: 5px;
+  background: white;
+  outline: none;
+  font-family: 'Ubuntu', sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.search {
+  margin-top: 5px;
 }

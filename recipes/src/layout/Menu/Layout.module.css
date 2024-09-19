@@ -1,58 +1,59 @@
-.layout{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
 }
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #2A2A2A;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #2a2a2a;
 }
-.link{
-    text-decoration: none;
-    color: white;
-    color: rgb(173, 177, 181);
+.link {
+  text-decoration: none;
+  color: white;
+  color: rgb(173, 177, 181);
 }
-.navbar_list{
-    display: flex;
-    gap: 20px;
+.navbar_list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
-.link:hover{
-    transform: scale(1.02);
-    color: white;
+.link:hover {
+  transform: scale(1.02);
+  color: white;
 }
-.active{
-    color: white;
+.active {
+  color: white;
 }
-.add_button{
-    background: none;
-    border-color: #20A2EB;
-    border-radius: 5px;
-    color: rgb(173, 177, 181);
-    font-family: var(--font-main);
-    padding: 13px 4px;
-    margin-top: -15px;
+.add_button {
+  background: none;
+  border-color: #20a2eb;
+  border-radius: 5px;
+  color: rgb(173, 177, 181);
+  font-family: var(--font-main);
+  padding: 13px 4px;
+  margin-top: 1rem;
 }
-.add_button:hover{
-    color: white;
+.add_button:hover {
+  color: white;
 }
-.navbar svg{
-    margin-top: -10px;
+.navbar svg {
+  margin-top: -10px;
 }
-.navbar svg:hover{
-    transform: scale(1.2);
+.navbar svg:hover {
+  transform: scale(1.2);
 }
-.main{
-    background-color: white;
-    margin: auto;
-    justify-content: center;
-    width: 60%;
-    flex-grow: 1;
+.main {
+  background-color: white;
+  margin: auto;
+  justify-content: center;
+  width: 60%;
+  flex-grow: 1;
 }
-.svg{
-    margin-right: 1rem;
-    margin-top: 1rem;
+.img {
+  margin-right: 1rem;
+  margin-top: 1rem;
 }

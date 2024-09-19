@@ -1,9 +1,9 @@
-.h2{
-    font-size: 20px;
-    font-family: var(--font-main);
-    font-style: normal;
-    margin: auto;
-    text-align: center;
-    width: 418px;
-    font-weight: normal;
+.h2 {
+  font-size: 20px;
+  font-family: var(--font-main);
+  font-style: normal;
+  margin: auto;
+  text-align: center;
+  width: 418px;
+  font-weight: normal;
 }

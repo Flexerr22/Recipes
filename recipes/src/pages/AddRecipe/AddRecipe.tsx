@@ -1,3 +1,3 @@
-export function AddRecipe(){
-    return <>AddRecipe</>
+export function AddRecipe() {
+  return <>AddRecipe</>
 }
