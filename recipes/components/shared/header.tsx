@@ -16,11 +16,11 @@ export const Header: React.FC<Props> = () => {
                 <div className="flex items-center hover:scale-110 transition-transform duration-300">
                     <Image src="/Resipes+.svg" alt="Logo" width={190} height={50}/>
                 </div>
-                <div className="flex items-center gap-20  pb-2 border-b-2 border-white cursor-pointer text-base font-semibold text-white hover:scale-110 transition-transform duration-300">
-                    <Link href="#">Каталог</Link>
-                    <Link href="#">О нас</Link>
-                    <Link href="#">Избранное</Link>
-                    <Link href="#">Профиль</Link>
+                <div className="flex items-center gap-20  pb-2 border-b-2 border-white cursor-pointer text-base font-semibold text-white">
+                    <Link href="#" className="hover:scale-110 transition-transform duration-300">Каталог</Link>
+                    <Link href="#" className="hover:scale-110 transition-transform duration-300">О нас</Link>
+                    <Link href="#" className="hover:scale-110 transition-transform duration-300">Избранное</Link>
+                    <Link href="#" className="hover:scale-110 transition-transform duration-300">Профиль</Link>
                 </div>
                 <div>
                     <Button className="flex items-center justify-between px-7 text-base" variant="outline" size="default">
