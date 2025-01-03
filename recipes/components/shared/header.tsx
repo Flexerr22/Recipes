@@ -14,10 +14,12 @@ export const Header: React.FC<Props> = () => {
         <header className="pt-10">
             <Container className="flex items-end  justify-between ">
                 <div className="flex items-center hover:scale-110 transition-transform duration-300">
-                    <Image src="/Resipes+.svg" alt="Logo" width={190} height={50}/>
+                    <Link href="/">
+                        <Image src="/Resipes+.svg" alt="Logo" width={190} height={50}/>
+                    </Link>
                 </div>
                 <div className="flex items-center gap-20  pb-2 border-b-2 border-white cursor-pointer text-base font-semibold text-white">
-                    <Link href="#" className="hover:scale-110 transition-transform duration-300">Каталог</Link>
+                    <Link href="/catalog" className="hover:scale-110 transition-transform duration-300">Каталог</Link>
                     <Link href="#" className="hover:scale-110 transition-transform duration-300">О нас</Link>
                     <Link href="#" className="hover:scale-110 transition-transform duration-300">Избранное</Link>
                     <Link href="#" className="hover:scale-110 transition-transform duration-300">Профиль</Link>

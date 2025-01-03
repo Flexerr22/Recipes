@@ -9,7 +9,6 @@ interface Props {
 
 export const Information: React.FC<Props> = () => {
     return (
-        <header className="pt-10">
             <Container className="flex justify-between">
                 <div className="flex flex-col text-white w-[427px] gap-5">
                     <b className="text-[48px] font-black leading-15">Онлайн книга рецептов</b>
@@ -28,6 +27,5 @@ export const Information: React.FC<Props> = () => {
                     <CarouselDemo />
                 </div>
             </Container>
-            </header>
     )
 }
