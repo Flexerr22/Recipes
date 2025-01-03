@@ -14,7 +14,7 @@ export const SearchBlock: React.FC<Props> = () => {
                     <div className="flex flex-col">
                         <b className="text-white text-2xl">Что готовим сегодня?</b>
                         <div className="relative flex items-center">
-                            <Search className="absolute translate-y-[140%] h-3 top-1/2 left-2 h-5 text-gray-400" />
+                            <Search className="absolute translate-y-[50%] h-3 top-1/2 left-1 h-5 text-gray-400" />
                             <Input
                                 className="w-[300px] mt-11 mx-auto pl-8"
                                 placeholder="Поиск рецептов..."

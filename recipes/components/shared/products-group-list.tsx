@@ -12,7 +12,8 @@ export const ProductGroupList: React.FC<Props> = ({
 }) => {
     return (
         <div className={className}>
-            <div className="grid grid-cols-3 bg-white rounded-[5px] gap-[23px] px-12 py-10">
+            <p className="text-[16px] font-semibold pl-12 pt-10">По запросу "куринные крылышки" найдено 6 рецептов</p>
+            <div className="grid grid-cols-3 rounded-[5px] gap-[50px] px-12 py-10">
                 {items.map((product, i) => (
                     <ProductCard 
                         key={product.id}
