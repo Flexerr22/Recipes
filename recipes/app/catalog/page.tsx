@@ -1,10 +1,7 @@
 import { Container } from "@/components/shared/container";
 import { Filters } from "@/components/shared/filters";
-import { Information } from "@/components/shared/information";
-import { ProductCard } from "@/components/shared/product-card";
 import { ProductGroupList } from "@/components/shared/products-group-list";
 import { SearchInput } from "@/components/shared/search";
-import { SearchBlock } from "@/components/shared/search-block";
 
 
 
@@ -13,10 +10,10 @@ export default function Catalog() {
         <Container className="pt-10">
             <SearchInput />
         </Container>
-        <div className="bg-black/50 pb-12">
+        <div className="bg-black/50">
         <Container className="flex flex-col gap-[60px]">
             <div className="flex gap-[60px]">
-                <div className="w-[260px]">
+                <div className="w-[260px] pb-6">
                     <Filters />
                 </div>
 

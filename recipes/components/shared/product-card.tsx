@@ -34,7 +34,7 @@ export const ProductCard: React.FC<Props> = ({className, id, name, imageUrl, ing
                         </div>
 
                         {/* Вертикальная линия */}
-                        <div className="border-2 h-5 border-black mx-2"></div>
+                        <div className="border-[1px] h-4 border-black mx-2"></div>
 
                         <div className="flex gap-3 items-center">
                             <Flame size={15} />
