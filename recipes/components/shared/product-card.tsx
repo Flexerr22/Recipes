@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { Title } from "./title"
-import { ChefHat, Flame, Heart, Hourglass } from "lucide-react"
+import { ChefHat, Flame, Hourglass } from "lucide-react"
 
 interface Props {
     className?: string,
@@ -16,10 +16,10 @@ interface Props {
 
 export const ProductCard: React.FC<Props> = ({className, id, name, imageUrl, ingrediens, time, weight }) => {
     return (
-        <div className={cn(className, "shadow-xl w-[280px] rounded-[15px]")}>
+        <div className={cn(className, "shadow-xl w-[20vw] rounded-[15px]")}>
             <Link href={`/product/${id}`} className="relative flex flex-col">
-                <div>
-                    <img className="rounded-[15px] w-full" height={154} src={imageUrl} alt={name} />
+                <div className="flex h-[200px]">
+                    <img className="rounded-[15px] w-full" height={50} src={imageUrl} alt={name} />
                 </div>
                 <div className="flex px-5 gap-2 flex-col mt-2 drop-shadow-xl">
                     <Title text={name} size="xs" className="font-semibold"></Title>
